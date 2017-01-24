@@ -29,7 +29,7 @@ trainIterations = 30000;
 
 In [my own tinkering](https://github.com/jasonsalas/deeptraffic/blob/master/net.js) with tweaking the neural net params, two distinct behaviors became apparent by the car among the traffic:
 
-* With minimal adjustments to the default values, the car tends to "hug the rail" - meandering over to the extreme leftmost or rightmost lanes and staying there. Intuitively, since this is a reinforcement network, the AI agent is being rewarded for avoiding traffic jams and being able to accelerate, but 
+* With minimal adjustments to the default values, the car tends to "hug the rail" - meandering over to the extreme leftmost or rightmost lanes and staying there. Intuitively, since this is a reinforcement network, the AI agent is being rewarded for avoiding traffic jams and being able to accelerate, but once it makes its way to the outer lanes will hide out there.
 * With more extreme adjustments - modifications to the parameter values that aren't in balance - the car will avoid traffic proactively, but when driving in a straight line andwill tend to oscillate, and bob-&-weave between open lanes. I think this is akin to the learning rate being set too high/low. 
 
 Generally, though, the car learns to handle traffic obstacles fairly well.
