@@ -1,7 +1,7 @@
 # deeptraffic
 This is my initial submmission for [MIT's self-driving car course](http://selfdrivingcars.mit.edu/) project on deep reinforcement learning, [Deep Traffic](http://selfdrivingcars.mit.edu/deeptrafficjs/). 
 
-This JavaScript code trains a pre-built neural network by tweaking various parameters in order to have an automotive agent drive optimally and maintain a rate of speed just over the speed limit of 70MPH. My submission didn't crack the [course's leaderboard](http://selfdrivingcars.mit.edu/leaderboard/), but I did get the net to run stable at an average velocity of 69.92 MPH. (The [10th-highest score](http://selfdrivingcars.mit.edu/leaderboard/) hit 74.04 MPH, so clearly I can make this work better.) 
+This JavaScript code trains a pre-built neural network by tweaking various parameters in order to have an automotive agent drive optimally and maintain a rate of speed just over the speed limit of 70MPH. My submission didn't crack the [course's leaderboard](http://selfdrivingcars.mit.edu/leaderboard/), but I did get the net to run stable at an average velocity of 70.66 MPH. (The [10th-highest score](http://selfdrivingcars.mit.edu/leaderboard/) hit 74.04 MPH, so clearly I can make this work better.) 
 
 ### My code
 Here are [the adjustments](https://github.com/jasonsalas/deeptraffic/blob/master/net.js) I made to the default JavaScript code, to lines 5-8:
