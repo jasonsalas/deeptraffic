@@ -1,10 +1,10 @@
 # deeptraffic
 This is my initial submmission for [MIT's self-driving car course](http://selfdrivingcars.mit.edu/) project on deep reinforcement learning, [Deep Traffic](http://selfdrivingcars.mit.edu/deeptrafficjs/). 
 
-This JavaScript code trains a pre-built neural network by tweaking various parameters in order to have an automotive agent drive optimally and maintain a rate of speed just over the speed limit of 70MPH. My submission didn't crack the [course's leaderboard](http://selfdrivingcars.mit.edu/leaderboard/), but I did get the net to run stable at an average velocity of 70.66 MPH. (The [10th-highest score](http://selfdrivingcars.mit.edu/leaderboard/) hit 74.04 MPH, so clearly I can make this work better.) 
+This JavaScript code trains a pre-built neural network by tweaking various parameters in order to have an automotive agent drive optimally and maintain a rate of speed just over the speed limit of 70MPH. My submission didn't crack the [course's leaderboard](http://selfdrivingcars.mit.edu/leaderboard/), but I did get the net to run stable at an average velocity of 70.66 MPH. (The [10th-highest score](http://selfdrivingcars.mit.edu/leaderboard/) hit 74.04 MPH, so I'm not too far off the pace, but clearly I can make this work better.) 
 
 ### My code
-Here are [the adjustments](https://github.com/jasonsalas/deeptraffic/blob/master/net.js) I made to the default JavaScript code, to lines 5-8:
+Here are [the adjustments](https://github.com/jasonsalas/deeptraffic/blob/master/net.js) I made to the default JavaScript, to lines 5-8:
 ~~~~
 lanesSide = 4;
 patchesAhead = 10;
@@ -18,7 +18,7 @@ num_neurons: 40,
 ~~~~
 
 ### Noteworthy behavior patterns
-What's most interesting about this project is how the car behaves. When modifying the JS variables at the top of the script (you really only need to mess with the _lanesSide_, _patchesAhead_, _patchesBehind_, and _trainIterations_ value, and then based on those adjustments, look at the number of inputs the net expects and then modify the number of neurons for the [reLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) layer(s) as the activation functio.
+What's most interesting about this project is how the car behaves. When modifying the JS variables at the top of the script (you really only need to mess with the _lanesSide_, _patchesAhead_, _patchesBehind_, and _trainIterations_ value, and then based on those adjustments, look at the number of inputs the net expects and then modify the number of neurons for the [reLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) layer(s) as the activation function.
 
 In [my own tinkering](https://github.com/jasonsalas/deeptraffic/blob/master/net.js) with tweaking the neural net params, two distinct behaviors became apparent by the car among the traffic:
 
@@ -30,4 +30,6 @@ The behaviors noted above are interesting, being similar to findings from studen
 Generally, though, the car learns to handle traffic obstacles fairly well.
 
 ### Further work
-Because this is a client-side implementation of a neural network, I wasn't able to use more advanced machine learning frameworks (Weka, H20, TensorFlow, etc.) to do grid search to optimize the hyperparameters. But manually turning the knobs is part of the educational process, so it's not a biggie.
+Because this is a client-side implementation of a neural network, I wasn't able to use more advanced machine learning frameworks (Weka, H20, TensorFlow, etc.) to do [grid search](https://en.m.wikipedia.org/wiki/Hyperparameter_optimization) to optimize the hyperparameters. But manually turning the knobs is part of the educational process, so it's no biggie.
+
+(Although [this insight by Ahmed El Deeb](https://medium.com/rants-on-machine-learning/smarter-parameter-sweeps-or-why-grid-search-is-plain-stupid-c17d97a0e881#.p6jaxm52l) is worth the read.)
