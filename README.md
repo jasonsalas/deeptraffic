@@ -32,6 +32,8 @@ In [my own tinkering](https://github.com/jasonsalas/deeptraffic/blob/master/net.
 * With minimal adjustments to the default values, the car tends to "hug the rail" - meandering over to the extreme leftmost or rightmost lanes and staying there. Intuitively, since this is a reinforcement network, the AI agent is being rewarded for avoiding traffic jams and being able to accelerate, but once it makes its way to the outer lanes will hide out there.
 * With more extreme adjustments - modifications to the parameter values that aren't in balance - the car will avoid traffic proactively, but when driving in a straight line andwill tend to oscillate, and bob-&-weave between open lanes. I think this is akin to the learning rate being set too high/low. 
 
+The behaviors noted above are interesting, being similar to findings from students in Udacity['s Self-Driving Car nanodegree program](https://www.udacity.com/drive), who [reported that](https://medium.com/@acflippo/cloning-driving-behavior-by-augmenting-steering-angles-5faf7ea8a125#.mxypzm1fp) simulated steering challenge data proved implied that machine learning-trained steering handling curves better than human drivers...but was very sketchy when driving for extended straight lines.
+
 Generally, though, the car learns to handle traffic obstacles fairly well.
 
 ### Further work
