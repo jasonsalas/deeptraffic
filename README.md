@@ -9,12 +9,12 @@ Here are [the adjustments](https://github.com/jasonsalas/deeptraffic/blob/master
 lanesSide = 4;
 patchesAhead = 10;
 patchesBehind = 8;
-trainIterations = 30000;
+trainIterations = 100000;
 ~~~~
 
 ...and to line 24...
 ~~~~
-num_neurons: 10,
+num_neurons: 40,
 ~~~~
 
 ### Noteworthy behavior patterns
