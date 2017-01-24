@@ -21,7 +21,7 @@ layer_defs.push({
 });
 layer_defs.push({
     type: 'fc',
-    num_neurons: 10,
+    num_neurons: 40,
     activation: 'relu'
 });
 layer_defs.push({
