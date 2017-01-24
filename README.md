@@ -18,14 +18,7 @@ num_neurons: 10,
 ~~~~
 
 ### Notes
-What's most interesting about this project is how the car behaves. When modifying the JS variables at the top of the script (you really only need to mess with the _lanesSide_, _patchesAhead_, _patchesBehind_, and _trainIterations_ values in lines 5-8, and then based on those adjustments, look at the number of inputs the net expects and then modify the number of neurons for the [reLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) layer(s) as the activation function in line 24.
-
-~~~~
-lanesSide = 4;
-patchesAhead = 10;
-patchesBehind = 8;
-trainIterations = 30000;
-~~~~
+What's most interesting about this project is how the car behaves. When modifying the JS variables at the top of the script (you really only need to mess with the _lanesSide_, _patchesAhead_, _patchesBehind_, and _trainIterations_ value, and then based on those adjustments, look at the number of inputs the net expects and then modify the number of neurons for the [reLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) layer(s) as the activation functio.
 
 In [my own tinkering](https://github.com/jasonsalas/deeptraffic/blob/master/net.js) with tweaking the neural net params, two distinct behaviors became apparent by the car among the traffic:
 
